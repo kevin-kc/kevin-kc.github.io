@@ -1,0 +1,451 @@
+    	html{height:100%; width:100%;}
+    	body{height:100%; width:100%; overflow-y:hidden;}
+    	hr { 
+		    display: block;
+		    margin-top: 0.5em;
+		    margin-bottom: 0.5em;
+		    margin-left: auto;
+		    margin-right: auto;
+		    border-style: inset;
+		    border-width: 1px;
+		}
+    	#BackDrop{width:100%; height:100%;
+    		padding-top:1.5%;
+    		background-color:black;
+    	}
+    	#HeaderDropDown{width:100%; height:3%;
+    		background-color:black;
+    		background:black;
+    		 -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+    		transition: height 1s;
+        	color:white;
+    	}
+    	#HeaderDropDown:hover{
+    		height:12%;
+    	}
+      	#HeaderInfo{width:100%; height:100%;
+	    	background-color:black;
+	        background:black;
+	        -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+	        transition: height 1s;
+	    }
+      	#HeaderInfo:hover{
+        	color:white;
+        	height:90%;
+        	/*background-color: blue;*/
+      	}
+      	#HeaderInfo #Owner{
+        	position:absolute;
+        	bottom:5%;
+        	right:0;
+      	}
+      	#LastUpdate{
+        	display:none;
+        	color:black;
+      	}
+      	#HeaderInfo:hover #LastUpdate{
+	        position:absolute;
+	        bottom:40%;
+	        right:0;
+	        display:block;
+	        color:white;
+      	}
+      	#Misc{
+        	display:none;
+        	color:black;
+      	}
+      	#HeaderInfo:hover #Misc{
+	        position:absolute;
+	        bottom:70%;
+	        right:0;
+	        display:block;
+	        color:white;
+      	}
+      	#Email{
+      		display:none;
+      		color:black;
+      	}
+      	#HeaderInfo:hover #Email{
+      		position:absolute;
+      		left:0;
+      		bottom:5%;
+      		display:block;
+      		color:white;
+      	}
+      	#Phone{
+      		display:none;
+      		color:black;
+      	}
+      	#HeaderInfo:hover #Phone{
+      		position:absolute;
+      		left:0;
+      		bottom:40%;
+      		display:block;
+      		color:white;
+      	}
+      	#Contact{
+      		display:none;
+      		color:black;
+      	}
+      	#HeaderInfo:hover #Contact{
+      		position:absolute;
+      		left:0;
+      		bottom:70%;
+      		display:block;
+      		color:white;
+      	}      	
+
+  		.InnerDrop{height:98%; width:100%;
+  		    background-color:#FAF0E6;
+  		    /*whiter color F2F2EA;*/
+  		}
+  		.container{width:100%; height:100%;
+  			background-color:#FAF0E6;
+  			/*whiter color #F2F2EA;*/
+  			position:relative;
+  			display:flex;
+  		}
+  		#ContentSelection{width:80%; height:100%;
+  		  	position: absolute;
+	  		top:45%;
+	  		left:51%;
+	  		transform: translate(-50%,-25%);
+	  		/*border: 1px solid black;*/
+  		}
+      	#ContentBackDrop{width:100%; height:50%;
+        	/*background-color:red;*/
+      	}
+  		.col-md-2{
+  			display: flex;
+  			justify-content: center;
+  			flex-direction: column;
+  			height: 100%;
+  			border-top: 1px solid rgba(0, 0, 0, .75);
+  			border-bottom: 1px solid rgba(0, 0, 0, .75);
+  			border-right: 1px solid rgba(0, 0, 0, .1);
+  			text-align: center;
+		}
+		#LinkedIn{
+	        position:absolute;
+	        bottom:5%;
+	        left:2%;
+	        display:inline-block;
+      	}
+		#Github{
+	        position:absolute;
+	        bottom:10%;
+	        left:1.7%;
+	        display:inline-block;
+      	}
+      	#Facebook{
+	        position:absolute;
+	        bottom:5%;
+	        right:2%;
+	        display:inline-block;
+      	}
+      	#Twitter{
+      		position:absolute;
+	        bottom:5%;
+	        right:4%;
+	        display:inline-block;
+      	}
+      	#GooglePlus{
+      		position:absolute;
+	        bottom:5%;
+	        right:6%;
+	        display:inline-block;      		
+      	}
+      	#Logo{
+	        width:80%; height:10%;
+	        position: absolute;
+	        top:80%;
+	        left:51%;
+	        transform: translate(-50%,-15%);
+      	}
+	    #Logo_box{
+	        justify-content: center;
+	        text-align: center;
+	        height:99%;
+	    }
+	    #About{
+	    	border-left: 1px solid rgba(0, 0, 0, .1);
+	    }
+	    #About:hover{
+	    	background-color:rgba(255,165,0,0.4);
+	    }
+	    #Project:hover{
+	    	background-color:rgba(255,0,56,0.4);
+	    }
+	    #Work:hover{
+	    	background-color:rgba(154,205,50,0.4);
+	    }
+	    #Education:hover{
+	    	background-color:rgba(0,191,255,0.4);
+	    }
+	    #Resume:hover{
+	    	background-color:rgba(138,43,226,0.4);
+	    }
+	    #Other:hover{
+	    	background-color:rgba(192,192,192,1);
+			
+	    }
+      	#contentBoxSettings{
+	        margin: auto;
+	        font-size: 150%;
+	        -ms-writing-mode: tb-lr;
+	        -webkit-writing-mode: vertical-lr;
+	        -moz-writing-mode: vertical-lr;
+	        -ms-writing-mode: vertical-lr;
+	        writing-mode: vertical-lr; 
+	        -webkit-text-orientation: upright;
+	        -moz-text-orientation: upright;
+	        -ms-text-orientation: upright;
+	        text-orientation: upright;
+      	}
+      	#Box1Text:hover{
+        	background-color:rgba(255,165,0,1); 
+      	}   
+      	#Box2Text:hover{
+        	background-color:rgba(255,0,56,1);
+      	}
+      	#longword:hover{
+        	background-color:rgba(154,205,50,1);
+      	}
+      	#Box4Text:hover{
+        	background-color:rgba(0,191,255,1);  
+      	}
+      	#Box5Text:hover{
+      		background-color:rgba(138,43,226,1);
+      	}
+      	#longword2:hover{
+      		background-color:rgba(128,128,128,0.8);
+      	}
+      	.lightbox{
+	        position:fixed; /* keeps the lightbox window in the current viewport */
+	        top:0; 
+	        left:0; 
+	        width:100%; 
+	        height:100%; 
+	        background-color:rgba(0,0,0,0);
+	        text-align:center;
+	        display:none;
+	        z-index:1;      		
+      	}
+      	#IntroBox{
+      		height:80%;
+      		width:80%;
+      		top:10%;
+      		left:0;
+      		position: relative;
+      		text-align:left;
+      		margin:auto;
+      		background-color:#FAF0E6;
+      		z-index:3;
+      		border-radius:20px;
+      		display:inline-block;
+      	}
+      	#IntroText{
+      		height:80%;
+      		width:80%;
+      		top:5%;
+      		position: relative;
+      		text-align:left;
+      		margin:auto;
+      		background-color:#FAF0E6;
+      		z-index:4;
+      		display:block;
+      	}
+      	#ProjectCarousel{
+      		height:75%;
+      		width:75%;
+      		top:8%;
+      		position: relative;
+      		margin:auto;
+      		z-index:3;
+      		display:block;
+      	}
+      	#verticalButtonContainer{
+      		height:80%;
+      		width:6%;
+      		top:5%;
+      		left:-40%;
+      		position: relative;
+      		margin:auto;
+      		background-color:rgba(154,205,50,0.4);
+      		z-index:5;
+      		border-radius:2px;
+      		display:inline-block;
+      	}
+      	#navbarContainer{
+      		height:6%;
+      		width:80%;
+      		top:5%;
+      		position: relative;
+      		margin:auto;
+      		background-color:rgba(0,191,255,0.4);
+      		z-index:5;
+      		border-radius:2px;
+      		display:inline-block;
+      	}
+      	.navbar{
+      		top:6%;
+      		width:99%;
+      		text-align:center;
+      		display:inline-block;
+      		z-index:5;
+      	}
+      	#navbarShownContent{
+      		height:80%;
+      		width:80%;
+      		top:7%;
+      		position: relative;
+      		margin:auto;
+      		background-color:#FAF0E6;
+      		z-index:3;
+      		border-radius:20px;
+      		display:inline-block;
+      	}
+    	.navbar-nav > li > .dropdown-menu{
+    		background-color:rgba(0,191,255,1);
+    	}
+    	#uoft2012, #uoft2013, #uoft2014, #uoft2015, #uoft2016, #uoft2017, #OntarioHighDiploma, #ElizabethDiploma, #OntarioScholar, #ElizabethHonor{
+    		height:100%;
+    		width:100%;
+    		margin:auto;
+    		display:none;
+    		visibility:hidden;
+    	}
+    	#OntarioHighDiploma, #ElizabethDiploma, #OntarioScholar, #ElizabethHonor{
+    		margin-right:-17.5%;
+		}
+    	#OntarioHighDiploma > img, #ElizabethDiploma > img, #OntarioScholar > img, #ElizabethHonor > img{
+    		max-width:100%; 
+    		max-height:100%;
+		}		
+		.table tbody > tr > td{ 
+			text-align:left;
+		}
+		.table tbody > tr > td:first-child{ 
+			border-right: 1px solid black;
+			font-weight: bold; 
+			text-align:center;
+		}
+		.table thead > tr > th{
+			text-align:center;
+			position: relative;
+      		margin:auto;
+      		font-weight: bold; 
+		}
+		.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td{ 
+			border-bottom: 1px solid black;
+			border-top: 1px solid black;
+		}
+      	#ResumeDisplayBox{
+      		height:85%;
+      		width:40%;
+      		top:8%;
+      		/*right:7.5%;*/
+      		position: relative;
+      		overflow-x: hidden;
+      		overflow-y: scroll;
+      		margin:auto;
+      		z-index:3;
+      		display:block;
+      		background-color:#FAF0E6;
+      	}
+      	#ResumeDownload{
+      		height:10%;
+      		width:10%;
+      		top:42.5%;
+      		left:75%;
+      		text-align:center;
+      		line-height: 350%;
+      		position: absolute;
+      		font-size: 200%;
+      		z-index:3;
+      		display:block;
+      		background-color:#FAF0E6;
+      	}
+    	#ResumeSelectPage1{
+      		height:12%;
+      		width:7%;
+      		top:35%;
+      		right:75%;
+      		text-align:center;
+      		line-height: 500%;
+      		position: absolute;
+      		font-size: 150%;
+      		margin:auto;
+      		z-index:3;
+      		display:block;
+      		background-color:#FAF0E6;
+    	}
+    	#ResumeSelectPage2{
+      		height:12%;
+      		width:7%;
+      		top:50%;
+      		right:75%;
+      		text-align:center;
+      		line-height: 500%;
+      		position: absolute;
+      		font-size: 150%;
+      		margin:auto;
+      		z-index:3;
+      		display:block;
+      		background-color:#FAF0E6;
+    	}
+    	#remim{
+    		margin-right:50%;
+    	}
+    	#remmi{
+    		color:black;
+    	}
+    	#remmi:hover{
+    		background-color:rgba(138,43,226,1);
+    	}
+    	.toggle_container{
+    		position:fixed;
+	        top:3%; 
+	        left:2%; 
+	        width:96%; 
+	        height:95%;
+	        z-index:-1;
+	        /*display:none;
+    		background: red;
+    		opacity:0.5;*/
+    	}
+    	#toggle_row1_container{width:50%; height:100%;
+    		left:0;
+    		/*background: green;
+    		opacity:0.5;
+    		display:none;*/
+    		position:relative;
+    	}
+    	#toggle_row2_container{width:50%; height:100%;
+    		right:0;
+    		/*background: orange;
+    		opacity:0.5;
+    		display:none;*/
+    		position:relative;
+    		direction: rtl;
+    	}
+	    .toggle_rc{
+	    	display:flex;
+	        justify-content: center;
+	        flex-direction: column;
+	        height: 25%;
+	        /*border: 1px solid black;*/
+	    }
+	    .toggleAnimate{
+	        font-size: 110%;
+	        -ms-writing-mode: tb-lr;
+	        -webkit-writing-mode: vertical-lr;
+	        -moz-writing-mode: vertical-lr;
+	        -ms-writing-mode: vertical-lr;
+	        writing-mode: vertical-lr; 
+	        -webkit-text-orientation: upright;
+	        -moz-text-orientation: upright;
+	        -ms-text-orientation: upright;
+	        text-orientation: upright;
+	        visibility:hidden;
+      }
